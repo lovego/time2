@@ -1,4 +1,4 @@
-package time
+package time2
 
 import (
 	"encoding/json"
