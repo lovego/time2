@@ -1,14 +1,12 @@
 # time2
 time wrapper for golang.
 
-[![Build Status](https://travis-ci.org/lovego/time2.svg?branch=master)](https://travis-ci.org/lovego/time2)
-[![Coverage Status](https://img.shields.io/coveralls/github/lovego/time2/master.svg)](https://coveralls.io/github/lovego/time2?branch=master)
+[![Build Status](https://github.com/lovego/time2/actions/workflows/go.yml/badge.svg)](https://github.com/lovego/time2/actions/workflows/go.yml)
+[![Coverage Status](https://coveralls.io/repos/github/lovego/time2/badge.svg?branch=master)](https://coveralls.io/github/lovego/time2)
 [![Go Report Card](https://goreportcard.com/badge/github.com/lovego/time2)](https://goreportcard.com/report/github.com/lovego/time2)
-[![GoDoc](https://godoc.org/github.com/lovego/time2?status.svg)](https://godoc.org/github.com/lovego/time2)
+[![Documentation](https://pkg.go.dev/badge/github.com/lovego/time2)](https://pkg.go.dev/github.com/lovego/time2@v0.0.2)
 
 ## Install
 `$ go get github.com/lovego/time2`
 
 
-## Documentation
-[https://godoc.org/github.com/lovego/time2](https://godoc.org/github.com/lovego/time2)

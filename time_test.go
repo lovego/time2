@@ -3,6 +3,7 @@ package time2
 import (
 	"encoding/json"
 	"fmt"
+	"time"
 )
 
 func ExampleParse() {
@@ -41,11 +42,11 @@ func ExampleValue() {
 	b, err := Time{}.Value()
 	fmt.Println(string(b.([]byte)), err)
 
-	t := New(2019, 9, 12, 12, 1, 2)
+	t := Time{time.Date(2019, 9, 12, 12, 1, 2, 0, time.UTC)}
 	b, err = t.Value()
 	fmt.Println(string(b.([]byte)), err)
 
 	// Output:
 	// NULL <nil>
-	// '2019-09-12 12:01:02' <nil>
+	// '2019-09-12T12:01:02Z' <nil>
 }

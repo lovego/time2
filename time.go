@@ -65,7 +65,7 @@ func (t Time) Value() (driver.Value, error) {
 	if t.Time.IsZero() {
 		return []byte("NULL"), nil
 	}
-	return []byte("'" + t.Format(timeFormat) + "'"), nil
+	return []byte(t.Format("'2006-01-02T15:04:05.999999Z07:00'")), nil
 }
 
 func (t *Time) Scan(value interface{}) error {
