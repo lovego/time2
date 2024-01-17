@@ -19,6 +19,10 @@ func Now() Time {
 	return Time{time.Now()}
 }
 
+func NowPtr() *Time {
+	return &Time{time.Now()}
+}
+
 func New(year, month, day, hour, minute, second int) Time {
 	return Time{time.Date(year, time.Month(month), day, hour, minute, second, 0, time.Local)}
 }
