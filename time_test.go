@@ -20,7 +20,7 @@ func ExampleMarshalJSON() {
 	b, err = json.Marshal(t)
 	fmt.Println(string(b), err)
 	// Output:
-	// null <nil>
+	// "" <nil>
 	// "2019-09-12 12:01:02" <nil>
 }
 

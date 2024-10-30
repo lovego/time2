@@ -50,7 +50,7 @@ func (t Time) String() string {
 
 func (t Time) MarshalJSON() ([]byte, error) {
 	if t.Time.IsZero() {
-		return []byte("null"), nil
+		return []byte(`""`), nil
 	}
 	return []byte(`"` + t.Format(timeFormat) + `"`), nil
 }
