@@ -7,7 +7,13 @@ import (
 )
 
 func ExampleParse() {
+	//req.Body: parsing time ""2025-01-10 15:24:58"" as ""2006-01-02T15:04:05Z07:00"": cannot parse " 15:24:58"" as "T"
 	fmt.Println(Parse("2019-09-12 12:01:02"))
+	// Output: 2019-09-12 12:01:02 <nil>
+}
+
+func ExampleParse2() {
+	fmt.Println(Parse("2019-09-12T12:01:02.971689452+08:00"))
 	// Output: 2019-09-12 12:01:02 <nil>
 }
 
@@ -34,7 +40,7 @@ func ExampleUnmarshalJSON() {
 	fmt.Println(t, err)
 
 	// Output:
-	// 2019-09-12 12:01:02 <nil>
+	// 2019-09-12 20:01:02 <nil>
 	//  invalid character '-' after top-level value
 }
 
